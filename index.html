@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ultra Calculator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+  <h1>UltraCalc</h1>
+  <div class="toggles">
+    <button id="modeBtn">Scientific</button>
+    <button id="themeBtn">🌙</button>
+  </div>
+</header>
+
+<main>
+  <section class="calculator">
+    <input id="display" readonly />
+
+    <div id="scientific" class="hidden">
+      <button data-fn="sin">sin</button>
+      <button data-fn="cos">cos</button>
+      <button data-fn="tan">tan</button>
+      <button data-fn="log">log</button>
+    </div>
+
+    <div class="keys">
+      <button>C</button><button>⌫</button><button>%</button><button>/</button>
+      <button>7</button><button>8</button><button>9</button><button>*</button>
+      <button>4</button><button>5</button><button>6</button><button>-</button>
+      <button>1</button><button>2</button><button>3</button><button>+</button>
+      <button class="wide">0</button><button>.</button><button class="equal">=</button>
+    </div>
+  </section>
+
+  <aside class="history">
+    <h2>History</h2>
+    <ul id="historyList"></ul>
+    <button id="clearHistory">Clear</button>
+  </aside>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
